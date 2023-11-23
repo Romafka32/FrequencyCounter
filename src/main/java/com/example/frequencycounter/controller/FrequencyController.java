@@ -48,7 +48,7 @@ public class FrequencyController {
     @Operation(
             summary = "Обработка входящей строки",
             description = "Возвращает строку, которая в заданном формате описывает символы их количество во входной строке",
-            parameters = @Parameter(name = "line", description = "Входящая строка для подсчета символов")
+            parameters = @Parameter(name = "line", description = "Входящая строка для подсчета символов. Ограничение по размеру строки — 1 MB")
     )
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "OK"),
